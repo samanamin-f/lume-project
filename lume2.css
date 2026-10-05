@@ -171,4 +171,256 @@ a{
   100%{
     opacity: 0;
   }
+
+
+  /* کدای اتنا */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.lume-footer {
+    background-color: rgb(35, 25, 20);
+    color: rgb(245, 240, 232);
+    font-family: Arial, sans-serif;
+}
+
+/*=====بخش اصلی ======*/
+.footer-main {
+    display: flex;
+    align-items: stretch;
+    padding: 75px 100px;
+    gap: 60px;
+
+}
+
+/* LUME */
+.footer-brand {
+    width: 35%;
+}
+
+.footer-brand h1 {
+    font-family: Georgia, serif;
+    font-size: 58px;
+    font-weight: normal;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-brand p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+
+.small-line {
+    width: 47px;
+    height: 1px;
+    background-color: rgb(180, 165, 150);
+    margin-bottom: 45px;
+}
+
+.gender-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.gender-links a {
+    color: rgb(245, 240, 232);
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+.gender-links span {
+    color: rgb(180, 165, 150);
+}
+
+/* =========ستونها========= */
+
+.fotter-column {
+    width: 21%;
+    border-left: 1px solid rgb(105, 91, 82);
+    padding-left: 60px;
+    flex-direction: column;
+}
+
+.footer-column+.footer-column {
+    border-left: 1px solid rgb(105, 91, 82);
+    margin-left: 20px;
+    padding-left: 40px;
+}
+
+.footer-column h3 {
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 5px;
+    margin-bottom: 45px;
+    color: white;
+}
+
+.footer-column a {
+    display: block;
+    color: rgb(235, 228, 220);
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.footer-column a:hover {
+    color: white;
+}
+
+/* ========NEWSLETTER========= */
+.newsletter {
+    border-top: 1px solid rgb(75, 64, 57);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 100px;
+}
+
+.newsletter-title {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.newsletter-title span {
+    width: 47px;
+    height: 1px;
+    background-color: rgb(180, 165, 150);
+}
+
+.newsletter-title h3 {
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: 5px;
+}
+
+.newsletter-title p {
+    margin-top: 25px;
+    margin-left: 82px;
+    font-size: 15px;
+    line-height: 1.9%;
+    letter-spacing: 1px;
+}
+
+/* کادر ایمیل */
+.email-box {
+    width: 38%;
+    height: 65px;
+    border: 1px solid rgb(105, 91, 82);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.email-box input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 2px;
+    width: 90%;
+}
+
+.email-box input::placeholder {
+    color: rgb(220, 212, 204);
+}
+
+.email-box button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* ========= پایین فوتر======= */
+.footer-bottom {
+    border-top: 1px solid rgb(75, 64, 57);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+.bottom-links {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-left: auto;
+}
+
+.bottom-links a {
+    color: rgb(235, 228, 220);
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.bottom-links span {
+    color: rgb(150, 135, 125);
+}
+
+/* =======Responsive======== */
+@media(max-width: 768px) {
+    .footer-main {
+        /* display: flex; */
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .footer-brand,
+    .footer-column {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer-column+.footer-column {
+        border-left: none;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .bottom-links {
+        margin-top: 20px;
+        margin-left: 0;
+        justify-content: center;
+    }
+    .email-box{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+    .email-box input{
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+    .email-box button{
+        width: 100%;
+    }
+
+   
 }

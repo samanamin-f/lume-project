@@ -123,11 +123,7 @@ a{
 }
 .hero h1{
   margin-top: 20px;
-  font-size: clamp(
-    70px
-    9vw
-    145px 
-  );
+  font-size: clamp(70px,9vw,145px);
   line-height: 0.86;
   font-weight: 400;
 }
@@ -205,7 +201,7 @@ a{
     padding-left: 25px;
     padding-right: 25px;
   }
-  .hero1 h1{
+  .hero h1{
     font-size: clamp(65px,11vw,100px);
   }
   .hero-description{
@@ -258,6 +254,7 @@ a{
   }
   .hero-image{
     opacity: 0.55;
+    object-fit: center center;
   }
   .dark-overlay{
     background: linear-gradient(90deg,rgba(36,27,23,0.9),rgba(36,27,23,0.45));

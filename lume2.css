@@ -254,8 +254,10 @@ a{
   }
   .hero-image{
     opacity: 0.55;
-    object-fit: center center;
   }
+  .hero-image img{
+     object-fit:contain;
+    object-position: center;}
   .dark-overlay{
     background: linear-gradient(90deg,rgba(36,27,23,0.9),rgba(36,27,23,0.45));
   }
@@ -293,12 +295,6 @@ a{
 
 
   /* کدای اتنا */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .lume-footer {
     background-color: rgb(35, 25, 20);
     color: rgb(245, 240, 232);

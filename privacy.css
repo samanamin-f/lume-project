@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(239, 229, 218);
+    color: rgb(74, 56, 44);
+    font-family: "Quicksand", sans-serif;
+}
+
+.header {
+    height: 90px;
+    padding: 0 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(180, 160, 140);
+}
+
+.logo {
+    color: rgb(74, 56, 44);
+    text-decoration: none;
+    font-family: "playfair Display", serif;
+    font-size: 32px;
+    letter-spacing: 5px;
+}
+
+.back {
+    color: rgb(74, 56, 44);
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.privacy {
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 6%;
+}
+
+.privacy-title {
+    padding-bottom: 70px;
+    border-bottom: 1px solid rgb(180, 160, 140);
+}
+
+.privacy-title p {
+    margin-bottom: 25px;
+    font-size: 12px;
+    letter-spacing: 4px;
+}
+
+.privacy-title h1 {
+    margin-bottom: 30px;
+    font-family: "Playfair Display", serif;
+    font-size: 76px;
+    font-weight: 500;
+    line-height: 0.95;
+    letter-spacing: 2px;
+}
+
+.privacy-title span {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.privacy-content section {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 30px;
+    padding: 45px 0;
+    border-bottom: 1px solid rgb(180, 160, 140);
+}
+
+.number {
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.privacy-content h2 {
+    margin-bottom: 18px;
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.privacy-content p {
+    max-width: 700px;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.privacy-content a {
+    display: inline-block;
+    margin-top: 15px;
+    color: rgb(74, 56, 44);
+    text-decoration: none;
+    border-bottom: 1px solid rgb(74, 56, 44);
+    padding-bottom: 3px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 30px;
+    padding: 70px 6%;
+    border-top: 1px solid rgb(180, 160, 140);
+}
+
+.footer-column {
+    padding: 0 30px;
+    border-right: 1px solid rgb(180, 160, 140);
+}
+
+.footer-column:first-child {
+    padding: 0;
+}
+
+.footer-column:last-child {
+    border-right: none;
+}
+.footer-column h3 {
+    margin-bottom: 25px;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+.footer-column a {
+    display: block;
+    margin-bottom: 12px;
+    color: rgb(74, 56, 44);
+    text-decoration: none;
+    font-size: 13px;
+}
+.back:hover, .footer-column a:hover, .privacy-content a:hover {
+    opacity: 0.6;
+}

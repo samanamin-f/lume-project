@@ -204,9 +204,9 @@ h2{
 }
 .section-header .ss{
   margin-top: 12px;
-  position: absolute;
-  left: 100px;
-  top: 1815px;
+  position: static;
+  margin-top: 0;
+
   font-size: 25px;
   font-weight: 400; 
 }
@@ -560,10 +560,10 @@ h2{
     display: none;
   }
   .text-link{
-    top: 500px;
+    
   }
   .text-links{
-    top: 400px;
+  
   }
   .section-header{
     margin-bottom: 30px;
@@ -589,10 +589,6 @@ h2{
   font-size: 9px;
 }
 .section-header .ss{
-  
-  position: absolute;
-  top: 1465px;
-  left: 11px;
   font-size: 20px;
 }
 /* small phone */

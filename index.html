@@ -32,8 +32,15 @@
     <main>
       <section class="hero">
         <div class="hero-image">
-          <img src="hero5.jpeg" alt="lume fashion" />
-          <img src="salam.jpeg" alt="" />
+          <picture>
+            <source media="(max-width: 767px)" srcset="salam-mob.jpeg">
+            <img src="salam.jpeg" alt="" />
+          </picture>
+          <picture>
+            <source media="(max-width: 767px)"srcset="hero-mob.jpeg">
+            <img src="hero5.jpeg" alt="">
+          </picture>
+          
         </div>
         <div class="dark-overlay"></div>
         <div class="container hero-content">
@@ -64,19 +71,42 @@
           ><span>TIMELESS STYLE</span><span>.</span>
         </div>
       </section>
-      <section class="collection section-collection" id="collectionm">
+      <section class="editorial" id="featured">
+        <div class="editorial-image">
+          <picture>
+            <source media="(max-width:767px)" srcset="editorial-mob.jpeg">
+            <img src="editorial.jpeg" alt="">
+          </picture>
+        </div>
+        <div class="editorial-overlay"></div>
+        <div class="container editorial-content">
+          <p class="eyebrow salam">THE NEW EDIT</p>
+          <h2>
+            QUIET <br>CONFIDENCE.
+          </h2>
+          <p>
+            Clean silhouettes.
+            Rich textures.
+            Everyday essentials. 
+          </p>
+          <a href="#collection" class="outline-button">
+            Explore Collection
+          </a>
+        </div>
+      </section>
+      <section class="collection section-collection section-one" id="collectionm">
         <div class="container">
           <div class="section-header">
             <div>
-              <p class="eyebrow">THE COLLECTION</p>
-              <h2>MEN <br>QUTFIT</h2>
+              <p class="eyebrow">BEST SELLER</p>
+              <h2>MEN</h2>
             </div>
             <a href="#" class="text-link">View All</a>
           </div>
           <div class="products-grid">
             <article class="product-card">
               <div class="product-image">
-                <img src="wool coat.jfif" alt="lume wool coat" />
+                <img src="wool coat.jpeg" alt="lume wool coat" />
                 <div class="product-hover">
                   <span>VIEW PRODUCT</span>
                 </div>
@@ -91,24 +121,100 @@
             </article>
             <article class="product-card">
               <div class="product-image">
-                <img src="knit.jfif" alt="LUME knit sweater" />
+                <img src="knit.jpeg" alt="LUME knit sweater" />
                 <div class="product-hover">
                   <span>VIEW PRODUCT</span>
                 </div>
               </div>
               <div class="product-info">
-                <div><h3>Knit Sweater</h3>
-                <p>
-                  Soft Essential
-                </p>
+                <div>
+                  <h3>Knit Sweater</h3>
+                  <p>Soft Essential</p>
                 </div>
                 <span class="price">$120</span>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-image">
+                <img src="shoes.jpeg" alt=""/>
+                <div class="product-hover">
+                  <span>VIEW PRODUCT</span>
+                </div>
+              </div>
+                <div class="product-info">
+                  <div>
+                    <h3>SHOES</h3>
+                    <p>classic shoes</p>
+                  </div>
+                  <span class="price"> 95$ </span>
+                </div>
               </div>
             </article>
             
           </div>
         </div>
       </section>
+      <section class="collection section-collection " id="collectionw collection">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">BEST SELLER</p>
+              <h2>WOMEN</h2>
+            </div>
+            <a href="#" class="text-link">View All</a>
+          </div>
+          <div class="products-grid">
+            <article class="product-card">
+              <div class="product-image">
+                <img src="leather jacket.jpeg" alt="lume leather" />
+                <div class="product-hover">
+                  <span>VIEW PRODUCT</span>
+                </div>
+              </div>
+              <div class="product-info">
+                <div>
+                  <h3>leather jacket</h3>
+                  <p>Essential Collection</p>
+                </div>
+                <span class="price">$245</span>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-image">
+                <img src="midi skirt.jpeg" alt="LUME midi skirt" />
+                <div class="product-hover">
+                  <span>VIEW PRODUCT</span>
+                </div>
+              </div>
+              <div class="product-info">
+                <div>
+                  <h3>midi skirt</h3>
+                  <p>Soft Essential</p>
+                </div>
+                <span class="price">$120</span>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-image">
+                <img src="shoesw.jpeg" alt=""/>
+                <div class="product-hover">
+                  <span>VIEW PRODUCT</span>
+                </div>
+              </div>
+                <div class="product-info">
+                  <div>
+                    <h3>SHOES</h3>
+                    <p>classic shoes</p>
+                  </div>
+                  <span class="price"> 95$ </span>
+                </div>
+              </div>
+            </article>
+            
+          </div>
+        </div>
+      </section>
+
     </main>
 
     <!-- کدای اتنا -->

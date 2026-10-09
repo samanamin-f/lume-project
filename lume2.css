@@ -13,6 +13,12 @@
   --border : #d8cbbb;
   --white: #ffffff;
 }
+h1,h2,h3,.logo{
+  font-family: "Playfair Display" , serif;
+} 
+body, p,a,span{
+  font-family: "Lato",sans-serif;
+}
 html{
   scroll-behavior: smooth;
 }
@@ -196,9 +202,12 @@ margin-bottom: 55px;
 h2{
   color: var(--brown-lights);
 }
-.section-header h2{
+.section-header .ss{
   margin-top: 12px;
-  font-size: clamp(45px,6vw,50px);
+  position: absolute;
+  left: 100px;
+  top: 1815px;
+  font-size: 25px;
   font-weight: 400; 
 }
 .text-link{
@@ -242,6 +251,7 @@ h2{
   overflow: hidden;
   min-width: 0;
   cursor: pointer;
+  
 }
 .product-image{
   position: relative;
@@ -525,13 +535,29 @@ h2{
   }
   .hero-image img{
      object-fit:cover;
-    object-position: center;}
+    object-position: center;
+  }
   .dark-overlay{
     background: linear-gradient(90deg,rgba(36,27,23,0.9),rgba(36,27,23,0.45));
   }
   .products-grid{
-    grid-template-columns: 1fr;
-    gap: 30px;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    gap: 0;
+  }
+  .product-card{
+    flex: 0 0 100%;
+    min-width: 0;
+    scroll-snap-align: start;
+  }
+  .product-image img{
+    width: 100%;
+    display: block;
+  }
+  .products-grid::-webkit-scrollbar{
+    display: none;
   }
   .text-link{
     top: 500px;
@@ -561,6 +587,13 @@ h2{
 .outline-button{
   padding: 12px 25px;
   font-size: 9px;
+}
+.section-header .ss{
+  
+  position: absolute;
+  top: 1465px;
+  left: 11px;
+  font-size: 20px;
 }
 /* small phone */
 @media (max-width:480px){

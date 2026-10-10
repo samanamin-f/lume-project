@@ -25,7 +25,6 @@ html{
 body{
   background-color: var(--brown);
   color: var(--cream);
-  font-family: arial,sans-serif;
 }
 a{
   text-decoration: none;
@@ -558,12 +557,6 @@ h2{
   }
   .products-grid::-webkit-scrollbar{
     display: none;
-  }
-  .text-link{
-    
-  }
-  .text-links{
-  
   }
   .section-header{
     margin-bottom: 30px;

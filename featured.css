@@ -112,3 +112,95 @@ body{
   height: 100%;
   width: 60%;
 }
+@media (max-width:767px){
+  .navbar{
+    padding: 18px 0;
+  }
+  .containerr{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .logo{
+    font-size: 25px;
+    letter-spacing: 7px;
+  }
+  .nav-links{
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0 10px;
+  }
+  .nav-links a{
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+  main .container-fluid:first-child .row{
+    row-gap: 12px;
+  }
+  main .container-fluid:first-child .row > .col-6{
+    width: 100%;
+  }
+  main .container-fluid:first-child .row > .col-2{
+    width: 33.333333%;
+  }
+  .card1{
+    min-height: 190px;
+    height: auto;
+    padding: 25px 10px;
+    text-align: center;
+  }
+  .card1 h1{
+    font-size: clamp(30px,8vw,42px);
+    line-height: 1.15;
+  }
+  .para{
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-top: 12px;
+  }
+  .card2{
+    height: auto;
+    min-height: 0;
+    padding: 0 4px;
+    align-items: center;
+  }
+  .card2 img{
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    margin-top: 0;
+    border-radius: 8px;
+  }
+  main .container-fluid:nth-child(2) .row{
+    row-gap: 0;
+  }
+  main .container-fluid:nth-child(2) .row > .col-6{
+    width: 100%;
+  }
+  .card3{
+    height: auto;
+    justify-content: center;
+    padding: 15px 0;
+  }
+  .card3 img{
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 420px;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  main .container-fluid:nth-child(2) h2 {
+    font-size: clamp(27px,7vw,36px);
+    line-height: 1.2;
+  }
+  .para2{
+    font-size: 13px;
+    line-height: 1.8;
+    margin-top: 12px;
+  }
+}

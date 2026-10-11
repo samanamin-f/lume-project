@@ -16,6 +16,12 @@
     />
     <link rel="stylesheet" href="lume2.css" />
     <title>Lume | fashion</title>
+    <script>
+      if (!sessionStorage.getItem("loadingShown")) {
+        sessionStorage.setItem("loadingShown", "yes");
+        window.location.href = "loading.html"
+      }
+    </script>
   </head>
   <body>
     <header class="navbar-wrapper">

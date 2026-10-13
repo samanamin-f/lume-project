@@ -130,6 +130,6 @@ body {
     }
     .loading-content {
         width: 90%;
-        transform: translateY(30px);
+        transform: translateY(10px);
     }
 }

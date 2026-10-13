@@ -113,7 +113,7 @@ footer {
 
 .footer-column {
     padding: 0 30px;
-    border-right: 1px solid rgb(180, 160, 140);
+    /* border-right: 1px solid rgb(180, 160, 140); */
 }
 
 .footer-column:first-child {

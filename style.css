@@ -224,3 +224,38 @@ footer a {
 footer p {
     font-size: 13px;
 }
+@media (max-width: 768px) {
+    nav {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .menu {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .story-hero {
+        padding: 90px 30px ;
+    }
+    .story-hero h1 {
+        font-size: 40px;
+    }
+    .story-content {
+        flex-direction: column;
+        padding: 60px 30px;
+    }
+    .page-title h1 {
+        font-size: 38px;
+    }
+    .contact-section {
+        flex-direction: column;
+        gap: 50px;
+        padding: 30px;
+    }
+    footer {
+        flex-direction: column;
+        padding: 50px 30px;
+    }
+}

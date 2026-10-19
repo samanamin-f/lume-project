@@ -69,7 +69,7 @@ body {
     display: grid;
     grid-template-columns: 50px 1fr;
     gap: 25px;
-    padding: 35px 0 ;
+    padding: 35px 0;
     border-top: 1px solid rgb(190, 177, 164);
     border-bottom: none
 }
@@ -123,11 +123,13 @@ footer {
 .footer-column:last-child {
     border-right: none;
 }
+
 .footer-column h3 {
     margin-bottom: 25px;
     font-size: 12px;
     letter-spacing: 3px;
 }
+
 .footer-column a {
     display: block;
     margin-bottom: 12px;
@@ -135,6 +137,98 @@ footer {
     text-decoration: none;
     font-size: 13px;
 }
-.back:hover, .footer-column a:hover, .privacy-content a:hover {
+
+.back:hover,
+.footer-column a:hover,
+.privacy-content a:hover {
     opacity: 0.6;
+}
+
+@media (max-width : 768px) {
+    .header {
+        height: 75px;
+        padding: 0 25px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .back {
+        font-size: 10px;
+    }
+
+    .privacy {
+        padding: 65px 25px;
+    }
+
+    .privacy-title {
+        padding-bottom: 50px;
+    }
+
+    .privacy-title h1 {
+        font-size: 52px;
+    }
+
+    .privacy-content section {
+        grid-template-columns: 40px 1fr;
+        gap: 15px;
+        padding: 35px 0;
+    }
+
+    .privacy-content h2 {
+        font-size: 23px;
+    }
+
+    .privacy-content p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px 0;
+        padding: 50px 25px;
+    }
+
+    .footer-column {
+        padding: 0 20px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 0 18px;
+    }
+
+    .back {
+        font-size: 9px;
+    }
+
+    .privacy {
+        padding: 50px 18px;
+    }
+
+    .privacy-title h1 {
+        font-size: 44px;
+    }
+
+    .privacy-content section {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    .number {
+        font-size: 11px;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr;
+        padding: 40px 18px;
+    }
+
+    .footer-column {
+        padding: 0 10px;
+    }
+
 }

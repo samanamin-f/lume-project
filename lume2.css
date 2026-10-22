@@ -843,20 +843,12 @@ h2{
         margin-left: 0;
         justify-content: center;
     }
+    .newsletter{
+      display: grid;
+      width: 100%;
+    }
     .email-box{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap: 10px;
+      width: 100%;
     }
-    .email-box input{
-        width: 100%;
-        box-sizing: border-box;
-        font-size: 16px;
-    }
-    .email-box button{
-        width: 100%;
-    }
-
    
 }
